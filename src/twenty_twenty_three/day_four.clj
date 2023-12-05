@@ -74,7 +74,7 @@ Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11")
 
 
 (defn count-cards
-  ([card-map] (count-cards card-map 0))
+  ([card-map] (dec (count-cards card-map 0)))
   ([card-map idx]
    (let [won (card-map idx)]
      (inc                                              ; +1 for the card itself
