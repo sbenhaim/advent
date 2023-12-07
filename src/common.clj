@@ -2,7 +2,7 @@
   (:require [clojure.string :as s]))
 
 (defn parse-int [s]
-  (Integer/parseInt s))
+  (Long/parseLong s))
 
 (defn parse-float [s]
   (Float/parseFloat s))
